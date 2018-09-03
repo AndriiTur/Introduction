@@ -1,0 +1,7 @@
+D:\job\ss_projects\1. Introduction\Introduction\Introduction\bin\Debug\Introduction.exe.config
+D:\job\ss_projects\1. Introduction\Introduction\Introduction\bin\Debug\Introduction.exe
+D:\job\ss_projects\1. Introduction\Introduction\Introduction\bin\Debug\Introduction.pdb
+D:\job\ss_projects\1. Introduction\Introduction\Introduction\obj\Debug\Introduction.csprojAssemblyReference.cache
+D:\job\ss_projects\1. Introduction\Introduction\Introduction\obj\Debug\Introduction.csproj.CoreCompileInputs.cache
+D:\job\ss_projects\1. Introduction\Introduction\Introduction\obj\Debug\Introduction.exe
+D:\job\ss_projects\1. Introduction\Introduction\Introduction\obj\Debug\Introduction.pdb
