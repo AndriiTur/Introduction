@@ -15,22 +15,23 @@ namespace Introduction
             //int b;
             //string strDigit;
 
-            //Console.Write("Enter digit a: ");
-            //strDigit = Console.ReadLine();
-            //bool isDigitA = Int32.TryParse(strDigit, out a);
-
-            //Console.Write("\nEnter digit b: ");
-            //strDigit = Console.ReadLine();
-            //bool isDigitB = Int32.TryParse(strDigit, out b);
-
-            //if (isDigitA && isDigitB)
+            //try
             //{
+            //    Console.Write("Enter digit a: ");
+            //    strDigit = Console.ReadLine();
+            //    a = Int32.Parse(strDigit);
+
+            //    Console.Write("\nEnter digit b: ");
+            //    strDigit = Console.ReadLine();
+            //    b = Int32.Parse(strDigit);
+
             //    Console.WriteLine($"\na + b = {a + b} \na - b = {a - b} \na * b = {a * b} \na / b = {a * 1.0 / b}");
             //}
-            //else
+            //catch(Exception e)
             //{
-            //    Console.WriteLine($"You enter not correct data");
+            //    Console.WriteLine(e.Message);
             //}
+
 
             //Console.Write("\nPress any key...");
             //Console.ReadKey();
@@ -77,27 +78,30 @@ namespace Introduction
             //int firstDigit;
             //int secondDigit;
             //string strDigit;
-            //string result;
+            //string result = "";
 
-            //Console.Write("Enter first digit: ");
-            //strDigit = Console.ReadLine();
-            //bool isDigitFirst = Int32.TryParse(strDigit, out firstDigit);
-
-            //Console.Write("Enter second digit: ");
-            //strDigit = Console.ReadLine();
-            //bool isDigitSecond = Int32.TryParse(strDigit, out secondDigit);
-
-            //if (isDigitFirst && isDigitSecond)
+            //try
             //{
+            //    Console.Write("Enter first digit: ");
+            //    strDigit = Console.ReadLine();
+            //    firstDigit = Int32.Parse(strDigit);
+
+            //    Console.Write("Enter second digit: ");
+            //    strDigit = Console.ReadLine();
+            //    secondDigit = Int32.Parse(strDigit);
+
             //    result = CheckDigits(firstDigit, secondDigit);
             //}
-            //else
+            //catch (Exception e)
             //{
-            //    result = "You enter not valid data";
+            //    Console.WriteLine(e.Message);
             //}
 
-            //Console.Clear();
-            //Console.WriteLine(result);
+            //if (result != "")
+            //{
+            //    Console.WriteLine(result);
+            //}
+
             //Console.ReadKey();
             #endregion
 
@@ -107,20 +111,18 @@ namespace Introduction
             //float squarePerimetr;
             //string strSquareSide;
 
-            //Console.Write("Enter square side: ");
-            //strSquareSide = Console.ReadLine();
-            //bool isFloat = float.TryParse(strSquareSide, out squareSide);
-
-            //Console.WriteLine("");
-            //if (isFloat)
+            //try
             //{
+            //    Console.Write("Enter square side: ");
+            //    strSquareSide = Console.ReadLine();
+            //    squareSide = float.Parse(strSquareSide);
             //    squareArea = squareSide * squareSide;
             //    squarePerimetr = 4 * squareSide;
             //    Console.WriteLine($"Square Area = {squareArea} \nSquare Perimetr = {squarePerimetr} ");
             //}
-            //else
+            //catch (Exception e)
             //{
-            //    Console.WriteLine($"You enter not correct data");
+            //    Console.WriteLine(e.Message);
             //}
 
             //Console.WriteLine("\nPress any key...");
@@ -129,32 +131,32 @@ namespace Introduction
             #endregion
 
             #region HomeWork1_C
-            //int age;
-            //string strAge;
-            //string name;
+            int age;
+            string strAge;
+            string name;
 
-            //Console.WriteLine("What is your name?");
-            //Console.Write("Name: ");
-            //name = Console.ReadLine();
-            //Console.WriteLine("\nHow old are you, {0}?");
-            //Console.Write("Age: ");
-            //strAge = Console.ReadLine();
-            //bool isDigit = Int32.TryParse(strAge, out age);
+            Console.WriteLine("What is your name?");
+            Console.Write("Name: ");
+            name = Console.ReadLine();
+            Console.WriteLine("\nHow old are you, {0}?");
+            Console.Write("Age: ");
+            strAge = Console.ReadLine();
+            bool isDigit = Int32.TryParse(strAge, out age);
 
-            //Console.Clear();
+            Console.Clear();
 
-            //if (isDigit)
-            //{
-            //    Console.WriteLine($"Name: {name} \nAge: {age}");
-            //}
-            //else
-            //{
-            //    Console.WriteLine($"Name: {name} you enter wrong age \"{strAge}\"");
-            //}
+            if (isDigit)
+            {
+                Console.WriteLine($"Name: {name} \nAge: {age}");
+            }
+            else
+            {
+                Console.WriteLine($"Name: {name} you enter wrong age \"{strAge}\"");
+            }
 
-            //Console.WriteLine("\nPress any key...");
+            Console.WriteLine("\nPress any key...");
 
-            //Console.ReadKey();
+            Console.ReadKey();
             #endregion
 
             #region HomeWork1_D
@@ -165,16 +167,23 @@ namespace Introduction
             //string strRadius;
 
             //Console.Write("Enter radius: ");
-            //strRadius = Console.ReadLine();
-            //bool isDouble = double.TryParse(strRadius, out radius);
+            //try
+            //{
+            //    strRadius = Console.ReadLine();
+            //    radius = double.Parse(strRadius);
 
-            //circleLength = 2 * Math.PI * radius;
-            //circleArea = Math.PI * radius * radius;
-            //circleVolume = Math.PI * radius * radius * radius;
+            //    circleLength = 2 * Math.PI * radius;
+            //    circleArea = Math.PI * radius * radius;
+            //    circleVolume = Math.PI * radius * radius * radius;
 
-            //Console.Clear();
-            //Console.WriteLine($"Circle Length: {circleLength} \nCircle Area: {circleArea} \nCircle Volume: {circleVolume}");
-            
+            //    Console.Clear();
+            //    Console.WriteLine($"Circle Length: {circleLength} \nCircle Area: {circleArea} \nCircle Volume: {circleVolume}");
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.Message);
+            //}
+
             //Console.WriteLine("\nPress any key...");
             //Console.ReadKey();
             #endregion
